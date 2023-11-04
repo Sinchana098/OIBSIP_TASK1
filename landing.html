@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://i.pinimg.com/736x/eb/81/12/eb811228fd43440632ea15edb769a1d9.jpg');
+            background-size: cover;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        nav {
+            width: 100%;
+            height: 100px;
+            background: white;
+            color: black;
+            display: flex;
+            justify-content: space-between; /* Changed from 'space-around' */
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2em;
+            letter-spacing: 1px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-right:320px;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: rgb(7, 7, 7);
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            
+        }
+
+        .menu a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0; /* Changed from '100%' */
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+        }
+
+        .menu a:hover:before {
+            width: 100%;
+        }
+
+        .register a {
+            text-decoration: none;
+            color: rgb(13, 13, 14);
+            padding: 10px 20px;
+            font-size: 20px;
+            background: indianred;
+            border-radius: 8px;
+            transition: 0.4s;
+            margin-right: 55px;
+        }
+
+        .register a:hover {
+            background: transparent;
+            border: 1px solid indianred;
+        }
+
+        .h-txt {
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: rgb(17, 14, 14);
+        }
+
+        .h-txt span {
+            letter-spacing: 5px;
+        }
+
+        .h-txt h1 {
+            font-size: 3.8em;
+        }
+
+        .h-txt a {
+            text-decoration: none;
+            background: indianred;
+            color:black;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            transition: 0.4s;
+        }
+
+        .h-txt a:hover {
+            background: transparent;
+            border: 1px solid indianred;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Travel-To-Go
+            </div>
+
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Hill Station</a>
+                <a href="#">Best Offers</a>
+                <a href="#">Service</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="register">
+                <a href="#">Register</a>
+            </div>
+        </nav>
+        <section class="h-txt"> <!-- Added a class to the section -->
+            <span>Enjoy</span>
+            <h1>International Traveling Agency</h1>
+            <br>
+            <a href="#">Book Your Trip</a>
+        </section>
+    </header>
+</body>
+</html>
+
